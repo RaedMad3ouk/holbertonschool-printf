@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "main.h"
 
 /**
  * print_percent - print percent
@@ -9,7 +9,7 @@
 int print_percent(va_list arg)
 {
 	(void)arg;
-	putchar('%');
+	_putchar('%');
 	return (1);
 }
 
@@ -36,7 +36,7 @@ int print_string(va_list arg)
 	while (str[i])
 
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 		i++;
 	}
 	return (i);
@@ -50,6 +50,6 @@ int print_string(va_list arg)
  */
 int print_char(va_list arg)
 {
-	putchar(va_arg(arg, int));
+	_putchar(va_arg(arg, int));
 	return (1);
 }
